@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 1em;
+    text-decoration: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 0.5em;
+    text-align: left;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+label {
+    margin-top: 1em;
+}
+
+button {
+    margin-top: 1em;
+    padding: 0.5em;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.btn {
+    padding: 0.5em 1em;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    margin: 0 0.2em;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn-editar {
+    background-color: #FFD700; 
+    color: #333; 
+}
+
+.btn-eliminar {
+    background-color: #FF4500; 
+    color: #fff;
+}
+
+.btn-editar:hover {
+    background-color: #FFC107;
+}
+
+.btn-eliminar:hover {
+    background-color: #FF6347;
+}

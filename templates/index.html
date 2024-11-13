@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2>Listado de Productos</h2>
+<table class="table table-dark table-hover">
+    <tr>
+        <th>ID</th>
+        <th>Descripción</th>
+        <th>Cantidad</th>
+        <th>Precio</th>
+        <th>Acciones</th>
+    </tr>
+    {% for producto in productos %}
+    <tr>
+        <td>{{ producto[0] }}</td>
+        <td>{{ producto[1] }}</td>
+        <td>{{ producto[2] }}</td>
+        <td>{{ producto[3] }}</td>
+        <td>
+           
+                <a href="{{ url_for('editar', id=producto[0]) }}" class="btn btn-editar">Editar</a>
+                <a href="{{ url_for('eliminar', id=producto[0]) }}" class="btn btn-eliminar">Eliminar</a>
+           
+            
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
